@@ -1,1 +1,6 @@
+[01] 闰年
+int year = 2014;
+if(year%400==0||(year%4==0&&year%100!=0))
+  printf("%d is a leap year."
 
+[02]
