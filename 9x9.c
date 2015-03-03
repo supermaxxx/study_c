@@ -1,3 +1,4 @@
+//99乘法表
 #include <stdio.h>
 int main()
 {
