@@ -6,7 +6,7 @@
 
 main()
 {
-  int i,j,k,n,l;
+  int i,j,k,l,n;
   printf("水仙花数(3位): ");
   for(n=100;n<1000;n++)
   {
