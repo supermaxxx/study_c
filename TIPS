@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main()
 {
-  char str[] = "China geclab";
+  char str[] = "Hi boy";
   printf("%s\n", str);
   return 0;
 }
