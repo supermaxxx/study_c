@@ -1,0 +1,26 @@
+1> 外部传入参数
+#include <stdio.h>
+int main()
+{
+  char str[] = "China geclab";
+  printf("%s\n", str);
+  return 0;
+}
+
+2> switch...case语法
+#include <stdio.h>
+main()
+{
+  int in;
+  char *out;
+  scanf("%d",&in);
+  switch(in)
+  {
+    case 0:out="success";break;
+    case 1:out="fail";break;
+    default:printf("data error");break;
+  }
+  printf("%s",out);
+}
+
+3> 
