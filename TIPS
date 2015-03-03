@@ -1,5 +1,5 @@
 [01] 外部传入值并读取
-1) scanf("%s",name);    //这个遇到空格就断
+1) scanf    //这个遇到空格就断
 #include <stdio.h>
 int main()
 {
