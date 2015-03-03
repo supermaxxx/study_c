@@ -1,13 +1,24 @@
-1> 外部传入参数
+[01] 外部传入值并读取
+1) scanf("%s",name);    //这个遇到空格就断
 #include <stdio.h>
 int main()
 {
-  char str[] = "Hi boy";
-  printf("%s\n", str);
+  char name[20];
+  printf("Please enter your name: ");
+  scanf("%s",name);
+  printf("Your name is: %s\n", name);
   return 0;
 }
+2) gets    //这个很危险，容易溢出，一般不用
+...
+  gets(name);
+...
+3) fgets    //使用这个函数，比较安全
+...
+  fgets(name,20,stdin);
+...
 
-2> switch...case语法
+[02] switch...case语法
 #include <stdio.h>
 main()
 {
@@ -23,4 +34,4 @@ main()
   printf("%s",out);
 }
 
-3> 
+[03] 
