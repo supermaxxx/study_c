@@ -1,9 +1,9 @@
-#include <stdio.h>
 /*
 水仙花数是指一个 n 位数 ( n≥3 )，
 它的每个位上的数字的 n 次幂之和等于它本身。
 （例如：1^3 + 5^3+ 3^3 = 153）
 */
+#include <stdio.h>
 main()
 {
 int i,j,k,l,n;
