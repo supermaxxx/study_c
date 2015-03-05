@@ -56,4 +56,51 @@ int main()
 result:
 4.47 和 9.83的平均数: 7.15
 */
-例2)
+例2)swap1  2个整数
+#include <stdio.h>
+void swap( int a, int b)
+{
+  int t = a;
+  a = b;
+  b = t;
+  printf("swap: 交换中: a=%d b=%d\n",a,b);
+}
+int main()
+{
+  int x = 5;
+  int y = 7;
+  printf("main: 交换前: x=%d y=%d\n",x,y);
+  swap(x,y);
+  printf("main: 交换后: x=%d y=%d\n",x,y);
+  return 0;
+}
+/*
+result:
+main: 交换前: x=5 y=7
+swap: 交换中: a=7 b=5
+main: 交换后: x=5 y=7
+*/
+例3)swap2  1个数组
+#include <stdio.h>
+void swap( int a[2])
+{
+  int t = a[0];
+  a[0] = a[1];
+  a[1] = t;
+  printf("swap: 交换中: a[0]=%d a[1]=%d\n",a[0],a[1]);
+}
+int main()
+{
+  int b[2] = {5,7};
+  printf("main: 交换前: b[0]=%d b[1]=%d\n",b[0],b[1]);
+  swap(b);
+  printf("main: 交换前: b[0]=%d b[1]=%d\n",b[0],b[1]);
+  return 0;
+}
+/*
+result:
+main: 交换前: b[0]=5 b[1]=7
+swap: 交换中: a[0]=7 a[1]=5
+main: 交换前: b[0]=7 b[1]=5
+*/
+#PS:
