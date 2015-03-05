@@ -34,4 +34,26 @@ main()
   printf("%s",out);
 }
 
-[03] 
+[03] 函数
+*函数的返回值类型必须和return返回值类型一致
+*如果函数没有返回值，指定为void
+*C语言中，函数返回值的类型可以省略，默认为int
+例1)计算2个数的平均值
+#include <stdio.h>
+double average(double x, double y)
+{
+  return (x+y)/2;
+}
+int main()
+{
+  double a = 4.47;
+  double b = 9.83;
+  double avg = average(a,b);
+  printf("%g 和 %g的平均数: %g\n",a,b,avg);
+  return 0;
+}
+/*
+result:
+4.47 和 9.83的平均数: 7.15
+*/
+例2)
